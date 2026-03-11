@@ -28,3 +28,11 @@ setInterval(createBackgroundSparkle,400);
 
 // Trigger letter paragraph fade-in
 if(document.getElementById("letter")) showLetterParagraphs();
+
+// Trigger fade-in on homepage elements
+window.addEventListener('DOMContentLoaded', () => {
+  const fadeElements = document.querySelectorAll('.fade');
+  fadeElements.forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), i*500);
+  });
+});
