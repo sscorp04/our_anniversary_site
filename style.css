@@ -50,7 +50,7 @@ transform:translateY(30px);
 transition:all 1s ease;
 }
 
-.section p{
+.justify-text {
 text-align: justify;
 line-height: 1.7;
 }
