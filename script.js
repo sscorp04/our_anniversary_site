@@ -29,3 +29,32 @@ function showLove(){
   button.innerText = "I knew it ❤️";
 
 }
+
+///// Live Countdown for countdown.html /////
+
+const countdownDate = new Date("2027-03-12T00:00:00").getTime(); // set your target date
+
+function updateCounter() {
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  if(distance < 0){
+    document.getElementById("counter").innerText = "Happy Anniversary! ❤️";
+    clearInterval(countdownInterval);
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000*60*60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000*60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("counter").innerText = 
+    `${days} days ${hours}h ${minutes}m ${seconds}s ❤️`;
+}
+
+// run immediately
+updateCounter();
+
+// update every second
+const countdownInterval = setInterval(updateCounter, 1000);
