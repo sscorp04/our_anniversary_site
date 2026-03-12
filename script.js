@@ -14,3 +14,18 @@ window.addEventListener("scroll", showSections);
 
 // Run on page load (so short pages also show)
 window.addEventListener("load", showSections);
+
+function showLove(){
+
+  const message = document.getElementById("loveMessage");
+  const button = document.getElementById("loveButton");
+
+  message.style.display = "block";
+
+  setTimeout(() => {
+    message.style.opacity = "1";
+  }, 50);
+
+  button.innerText = "I knew it ❤️";
+
+}

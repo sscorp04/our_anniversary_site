@@ -50,6 +50,11 @@ transform:translateY(30px);
 transition:all 1s ease;
 }
 
+.section p{
+text-align: justify;
+line-height: 1.7;
+}
+
 .section.show{
 opacity:1;
 transform:translateY(0);
