@@ -11,6 +11,9 @@
 
 <body>
 
+<img src="images/rose.png" class="decoration dec1">
+<img src="images/rose.png" class="decoration dec2">
+
 <nav>
   <a href="index.html">Home</a>
   <a href="timeline.html">Timeline</a>
@@ -19,17 +22,87 @@
   <a href="secret.html">Secret</a>
 </nav>
 
+<section class="hero">
+
+<img src="images/willow.jpg" class="floating-photo photo-left">
+<img src="images/picnic.jpg" class="floating-photo photo-right">
+
+</section>
+
 <section class="section">
   <h1 class="heading">Our Timeline</h1>
 
-  <p>First time we met — the moment everything started.</p>
+  <button onclick="showText('text1')">First Meeting ✨</button>
+  <p id="text1" style="display:none; margin-top:10px;">
+    Our first interaction wasn't exactly good😂. 
+    Both had a bad impressions of each other 😛.
+    little did we know, that bad start would be the 
+    beginning of something incredible baby.
+  </p>
 
-  <p>Our first date — still one of my favorite memories.</p>
+  <button onclick="showText('text2')">Friendship moments 🎞️</button>
+  <p id="text2" style="display:none; margin-top:10px;">
+    Despite my rude start, we eventually became friends.
+    Our friendship was a little off and on for since i 
+    always busy. But eventhough the gaps, we kept finding 
+    our way back to each other, supporting one another,
+    and slowly building a bond that felt special.
+  </p>
 
-  <p>The day we officially became us.</p>
+  <button onclick="showText('text3')">Realization 🧸</button>
+  <p id="text3" style="display:none; margin-top:10px;">
+    Overtime, i began to notice something changing,
+    something gentle but undeniable. The way my heart
+    felt around you, the way your presence could brighten
+    my worst days, and how being with you felt like coming
+    home. it was all becoming more than just friendship. 
+  </p>
 
-  <p>One year later — and I still choose you.</p>
+  <button onclick="showText('text4')">Blossoming love 🫶🏻 </button>
+  <p id="text4" style="display:none; margin-top:10px;">
+    Slowly, our friendship blossomed into something far
+    more beautiful. What was once laughter, silenced,
+    and shared secrets became warmth, care, and an
+    unspoken connection that neither of us could ignore.
+  </p>
+
+  <button onclick="showText('text2')">Adventures Together 📺</button>
+  <p id="text2" style="display:none; margin-top:10px;">
+    Every adventure, every late-night conversation,
+    every quiet moment together has been a piece of 
+    the our story baby. 
+  </p>
+
+  <button onclick="showText('text3')">From friends to lovers 👩🏻‍❤️‍💋‍👨🏻 </button>
+  <p id="text3" style="display:none; margin-top:10px;">
+    From best friends to lovers, we've grown together
+    in ways i never imagined possible. Everyday,
+    i find myself cherishing you even more.
+  </p>
+
+  <button onclick="showText('text4')">Forever Us 🕰️ </button>
+  <p id="text4" style="display:none; margin-top:10px;">
+    Our journey has shown me that the deepest love 
+    often begins as friendship, and ours is proof
+    of that. With every shared memory, every challenged
+    we've faced, and every moment of joy, our connection 
+    has grown stronger. You've become not just my partner
+    but my safe place, my home, and my greatest happiness.
+
+  </p>
+
 </section>
+
+<script>
+function showText(id) {
+  const p = document.getElementById(id);
+  if (p.style.display === "none") {
+    p.style.display = "block";
+  } else {
+    p.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
